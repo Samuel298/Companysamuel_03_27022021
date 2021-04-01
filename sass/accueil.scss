@@ -1,3 +1,33 @@
+.loader {
+	animation: loader 0.01s;
+  animation-delay: 1.10s;
+  animation-fill-mode: both;
+  align-items:center;
+  background-color:#f3f3f3;
+  display:flex;
+  height: 100%;
+  justify-content:center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+.spinners {
+  border-left:10px solid #99E2D2 ;
+  border-right:10px solid #ffffff;
+  border-top: 10px solid #9356dc;
+  border-bottom: 10px solid #ff79da;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1.5s linear infinite;
+  margin: auto;
+  position: absolute;
+  top: 0;left: 0;right: 0;bottom: 0;
+}
+
 .loca {
   display: flex;
   justify-content: center;
@@ -93,6 +123,9 @@
       position: absolute;
       left: -0.75rem;
     }
+  }
+  &__step:hover {
+    background-color: #9256dc1f;
   }
 
   &__icon {
