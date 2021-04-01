@@ -14,17 +14,11 @@
     }
   } 
   
-  @keyframes jump {
+  @keyframes spin {
     0% {
-      transform: translateY(0);
-    }
-    25% {
-      transform: translateY(0.5rem);
-    }
-    75% {
-      transform: translateY(-0.5rem);
+      transform: rotate(0deg);
     }
     100% {
-      transform: translateY(0);
+      transform: rotate(360deg);
     }
   }
